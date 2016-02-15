@@ -18,7 +18,7 @@ The code is simple and quite self explanatory. There are almost no checks becaus
         python3 source/parse_data.py -d input -s output/hdl_data.h5
 
 
-3.  The result is a 7GB HDF5 store which contains concatenated and sorted data. Now you can start with the real job and do some meaningful analysis ;)
+3.  The result is a 7GB HDF5 store which contains concatenated and sorted data. The data can now be loaded on demand and you need only as much memory as it is needed for the part of the data you are working on. Now you can start with the real job and do some meaningful analysis ;)
 
 ### Requirements
 In short, you need not-too-old versions of Python3, pandas and pytables (requires [HDF5](https://www.hdfgroup.org/HDF5/release/obtain5.html)). The code is known to work with:
