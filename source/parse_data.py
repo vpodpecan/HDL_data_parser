@@ -99,7 +99,7 @@ def process_HDL_data(dirname, storeFname):
             # most likely the first candidate is the one to keep because
             # the second measurement typically has a very small 'diffSec' (time difference) from the first one
             data[sensorname] = data[sensorname].drop_duplicates('time', keep='first')
-            data[sensorname].reset_index(inplace=True, drop=True)
+            data[sensorname].set_index('time', inplace=True)
 
             name = '/{}/{}'.format(nick, sensorname)
             store.put(name, data[sensorname])
