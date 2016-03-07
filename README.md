@@ -29,3 +29,7 @@ In short, you need not-too-old versions of Python3, pandas and pytables (require
 
 The code can be easily modified to use pickle instead HDF5. However, this may be less convenient because you will have to distribute the data across several files or load everything into memory when reading the processed data for the analysis.
 
+
+### Author and Contact
+
+You can contact the author at <vid.podpecan@ijs.si>
