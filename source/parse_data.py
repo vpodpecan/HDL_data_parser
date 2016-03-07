@@ -1,9 +1,15 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Mon Mar  7 18:24:50 2016
+
+@author: Vid Podpečan (vid.podpecan@ijs.si)
+"""
+
 import tarfile
 import os
 import sys
 import argparse
 import pandas as pd
-
 
 
 def process_HDL_data(dirname, storeFname):
